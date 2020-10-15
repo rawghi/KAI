@@ -33,7 +33,7 @@ function initMap(){
     var mymap = L.map('mainMap',{
         crs: L.CRS.Kerbin.Equirectangular,
         minZoom: 0,
-        maxZoom: 4
+        maxZoom: 5
     }).setView([0,0], 0);
         
     L.tileLayer.kaiMaps({body: 'kerbin', style:'sat'}).addTo(mymap);
