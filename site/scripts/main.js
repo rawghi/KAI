@@ -32,7 +32,7 @@ $(document).ready(function () {
 function initMap(){
     var mymap = L.map('mainMap',{
         crs: L.CRS.Kerbin.Equirectangular,
-        minZoom: 0,
+        minZoom: 2,
         maxZoom: 5
     }).setView([0,0], 0);
         
