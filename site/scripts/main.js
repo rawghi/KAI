@@ -33,7 +33,7 @@ function initMap(){
     var mymap = L.map('mainMap',{
         crs: L.CRS.Kerbin.Equirectangular,
         minZoom: 2,
-        maxZoom: 5,
+        maxZoom: 6,
         maxBounds: [[-90,-190], [90,190]],
         maxBoundsViscosity: 0.8,
         worldCopyJump: false,
@@ -59,7 +59,7 @@ function initMap(){
 L.TileLayer.KaiMaps = L.TileLayer.extend({
 	options: {},
 	initialize: function(options) {
-		var url = "https://rawghi.github.io/KAI/mapserver/{z}/{y}/{x}.png"
+		var url = "https://rawghi.github.io/kai-mapserver/tiles/{z}/{y}/{x}.png"
 		L.TileLayer.prototype.initialize.call(this, url, options);
 	}
 });
