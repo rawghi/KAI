@@ -44,9 +44,9 @@ function MapComponent(){
             let divIcon = L.divIcon({
                 className: 'kai-marker',
                 iconSize: [36, 36],
-                iconAnchor: [18, 18],
-                popupAnchor: [0, -18],
-                html:'<img src="https://rawghi.github.io/KAI/CDN/mapicons/' + poi.icon + '.png" />'
+                iconAnchor: [18, 42],
+                popupAnchor: [0, -42],
+                html:'<div class="circle"><img src="https://rawghi.github.io/KAI/CDN/mapicons/' + poi.icon + '.png" /></div><div class="arrow"></div>'
               });
             
             let myIcon = L.icon({
@@ -56,9 +56,8 @@ function MapComponent(){
                 popupAnchor: [0, -12]
             });
             
-            let myMarker = L.marker(poi.coords, {icon: myIcon});
-            //let myMarker = L.marker(poi.coords, {icon: divIcon});
-
+            //let myMarker = L.marker(poi.coords, {icon: myIcon});
+            let myMarker = L.marker(poi.coords, {icon: divIcon});
 
             let MyPopupContent = poi.description;
 

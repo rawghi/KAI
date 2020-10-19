@@ -9,18 +9,33 @@
 }
 
 .kai-marker{
-    background-color: @background-color;
-    width: 36px;
-    height: 36px;
-    text-align: center;
-    border-radius: 50%;
-    //padding: 6px 0 0 6px;
-    border: 2px solid @panel-border-color;
+    
+    .circle{
+        background-color: @marker-color;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        border-radius: 50%;
+        z-index: 20;
+        position: absolute;
+        //padding: 6px 0 0 6px;
+        border: 2px solid @marker-border-color;
+        box-sizing: border-box;
+        img{
+            margin-top:6px;
+        }
 
-    img{
-        margin-top:6px;
     }
-
+    .arrow{
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+        background-color: @marker-tip-color;
+        margin-left: 8px;
+        margin-top: 20px;
+        z-index: 10;
+        position: absolute;
+    }
 }
 // .kai-marker::before{
 //     content: "";
