@@ -56,8 +56,8 @@ function MapComponent(){
                 popupAnchor: [0, -12]
             });
             
-            //let myMarker = L.marker(poi.coords, {icon: myIcon});
-            let myMarker = L.marker(poi.coords, {icon: divIcon});
+            let myMarker = L.marker(poi.coords, {icon: myIcon});
+            //let myMarker = L.marker(poi.coords, {icon: divIcon});
 
 
             let MyPopupContent = poi.description;
