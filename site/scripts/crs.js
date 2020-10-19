@@ -4,7 +4,9 @@
 
 /* TILE LAYER DEFINITION */
 L.TileLayer.KaiMaps = L.TileLayer.extend({
-	options: {},
+	options: {
+		attribution: 'Powered by <a href="http://kaerospace.blogspot.com/">KAI</a> | Imagery from Kerbal Space Program via Sigma-Cartographer'
+	},
 	initialize: function(options) {
 		var url = "https://rawghi.github.io/kai-mapserver/tiles/{z}/{y}/{x}.png"
 		L.TileLayer.prototype.initialize.call(this, url, options);
