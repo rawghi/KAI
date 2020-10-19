@@ -2,7 +2,7 @@ const data_genericpoi = [
     {
         "name": "Kerbal Space Center",
         "coords": [-0.1025, -74.575278],
-        "icon": "vab",
+        "icon": "vab_2",
         "description": "Kerbal Space Center"
     },
     {
