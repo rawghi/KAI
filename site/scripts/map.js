@@ -5,26 +5,36 @@ function MapComponent(){
 
     self.init = function(){
         self.internalMap = self.initMap();
-        self.populateGenericLayer(self.internalMap);
+        
     };
 
     /* MAP INIT */
     self.initMap = function(){
+        
+        let genericLayer = self.createGenericLayer();
+        
+        let overlayPoi = {
+            "Locations": genericLayer
+        }
+
         self.internalMap = L.map('mainMap',{
             crs: L.CRS.Kerbin.Equirectangular,
-            minZoom: 2,
+            minZoom: 1,
             maxZoom: 6,
+            zoomDelta: 1,
+            center: [0,0],
             zoom: 2,
             maxBounds: [[-90,-190], [90,190]],
             maxBoundsViscosity: 0.8,
-            worldCopyJump: true,
-            attributionControl: true
-            
-
-        }).setView([0,0], 0);
+            worldCopyJump: false,
+            attributionControl: true,
+            layers: [genericLayer]
+        }).setView([0,0], 2);
             
         L.tileLayer.kaiMaps({body: 'kerbin', style:'sat'}).addTo(self.internalMap);
-        
+
+        L.control.layers(null,overlayPoi).addTo(self.internalMap);
+
         //coord controls
         L.control.coordinates({
             decimals:4,
@@ -48,11 +58,11 @@ function MapComponent(){
         //measure control
         self.internalMap.addControl(new L.Control.LinearMeasurement({
             unitSystem: 'metric',
-            color: '#feca57',
+            color: '#fff',
             type: 'line',
             doubleClickSpeed: 2000,
             weight: 1,
-            opacity: 0.9,
+            opacity: 0.4,
             radius: 2
         }));
 
@@ -65,8 +75,10 @@ function MapComponent(){
         return self.internalMap;
     };
 
-    self.populateGenericLayer = function(myMap){
-           
+    self.createGenericLayer = function(){
+        
+        let genericPoiGroup = new L.layerGroup();
+
         _.forEach(data_genericpoi, function(poi) {
             let divIcon = L.divIcon({
                 className: 'kai-marker',
@@ -101,9 +113,10 @@ function MapComponent(){
 
             myMarker.bindPopup(MyPopupContent).openPopup();
 
-            myMarker.addTo(myMap);
+            myMarker.addTo(genericPoiGroup);
 
         });
+        return genericPoiGroup;
     }
 
 
