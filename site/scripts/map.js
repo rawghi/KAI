@@ -45,6 +45,17 @@ function MapComponent(){
             weight: 0.4
         }).addTo(self.internalMap);
 
+        //measure control
+        self.internalMap.addControl(new L.Control.LinearMeasurement({
+            unitSystem: 'metric',
+            color: '#feca57',
+            type: 'line',
+            doubleClickSpeed: 2000,
+            weight: 1,
+            opacity: 0.9,
+            radius: 2
+        }));
+
         //scale control
         L.control.scale().addTo(self.internalMap);
         
