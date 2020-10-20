@@ -14,6 +14,7 @@ function MapComponent(){
             crs: L.CRS.Kerbin.Equirectangular,
             minZoom: 2,
             maxZoom: 6,
+            zoom: 2,
             maxBounds: [[-90,-190], [90,190]],
             maxBoundsViscosity: 0.8,
             worldCopyJump: true,
@@ -24,12 +25,27 @@ function MapComponent(){
             
         L.tileLayer.kaiMaps({body: 'kerbin', style:'sat'}).addTo(self.internalMap);
         
+        //coord controls
         L.control.coordinates({
             decimals:4,
             enableUserInput:false
         }).addTo(self.internalMap);
 
+        //graticule
+        L.latlngGraticule({
+            showLabel: true,
+            zoomInterval: [
+                {start: 2, end: 3, interval: 30},
+                {start: 4, end: 4, interval: 10},
+                {start: 5, end: 7, interval: 5},
+                {start: 8, end: 10, interval: 1}
+            ],
+            opacity: 0.8,
+            font: '11px Ubuntu',
+            weight: 0.4
+        }).addTo(self.internalMap);
 
+        //scale control
         L.control.scale().addTo(self.internalMap);
         
         self.internalMap.invalidateSize();
@@ -59,7 +75,18 @@ function MapComponent(){
             //let myMarker = L.marker(poi.coords, {icon: myIcon});
             let myMarker = L.marker(poi.coords, {icon: divIcon});
 
-            let MyPopupContent = poi.description;
+            let MyPopupContent = 
+                '<div class="popup-container">' +
+                    '<div class="popup-title">' +
+                        poi.name + 
+                    '</div>' + 
+                    '<div class="popup-desc">' +
+                        poi.description +
+                    '</div>' + 
+                    '<div class="popup-img">' +
+                        '<img src="https://rawghi.github.io/KAI/CDN/maplocations/' + poi.image +'" />' +
+                    '</div>' +
+                '</div>';
 
             myMarker.bindPopup(MyPopupContent).openPopup();
 
