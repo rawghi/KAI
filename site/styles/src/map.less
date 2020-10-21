@@ -6,6 +6,51 @@
     background-color: @background-color;
     position: absolute;
     z-index: 0;
+
+
+    .plotter-container{
+        width: 232px;
+        border: 1px solid @panel-border-color;
+        background-color: @background-color;
+        line-height: 24px;
+        padding: 3px;
+        bottom: 62px;
+        position: absolute;
+        z-index: 2000;
+        right: 10px;
+        overflow: auto;
+        
+        input{
+            width: 180px;
+            float: left;
+            font-size: 10px;
+        }
+        a{
+            float: right;
+            margin-left: 5px;
+            margin-top: 0px;
+            font-size: 10px;
+            color: #fff;
+        }
+    }
+
+    .pupup-deleteline{
+        .leaflet-popup-content{
+            padding: 12px;;
+            //width: 150px;
+            text-align: center;
+            //height: 30px;
+        }
+
+        .leaflet-popup-close-button{
+            display: none;
+        }
+        
+    }
+    .button-deleteline{
+        font-size: 11px;
+    }
+  
 }
 
 .kai-marker{

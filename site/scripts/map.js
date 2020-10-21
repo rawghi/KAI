@@ -2,6 +2,7 @@ function MapComponent(){
     let self = this;
     self.internalMap = null;
     self.genericLayer = null;
+    self.mapId = 'mainMap';
 
     self.init = function(){
         self.internalMap = self.initMap();
@@ -17,7 +18,7 @@ function MapComponent(){
             "Locations": genericLayer
         }
 
-        self.internalMap = L.map('mainMap',{
+        self.internalMap = L.map(self.mapId,{
             crs: L.CRS.Kerbin.Equirectangular,
             minZoom: 1,
             maxZoom: 6,
@@ -68,6 +69,12 @@ function MapComponent(){
 
         //scale control
         L.control.scale().addTo(self.internalMap);
+
+        let plotter = new Plotter({
+            mapSelector: '#' + self.mapId,
+            mapObj: self.internalMap
+        });
+        plotter.init();
         
         self.internalMap.invalidateSize();
         self.internalMap.getSize();
