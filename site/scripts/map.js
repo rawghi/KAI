@@ -13,9 +13,11 @@ function MapComponent(){
     self.initMap = function(){
         
         let genericLayer = self.createGenericLayer();
+        let featuresLayer = self.createFeaturesLayer();
         
         let overlayPoi = {
-            "Locations": genericLayer
+            "Locations": genericLayer,
+            "Geography": featuresLayer
         }
 
         self.internalMap = L.map(self.mapId,{
@@ -29,7 +31,7 @@ function MapComponent(){
             maxBoundsViscosity: 0.8,
             worldCopyJump: false,
             attributionControl: true,
-            layers: [genericLayer]
+            layers: [genericLayer, featuresLayer]
         }).setView([0,0], 2);
             
         L.tileLayer.kaiMaps({body: 'kerbin', style:'sat'}).addTo(self.internalMap);
@@ -39,7 +41,8 @@ function MapComponent(){
         //coord controls
         L.control.coordinates({
             decimals:4,
-            enableUserInput:false
+            enableUserInput:false,
+            useLatLngOrder: true
         }).addTo(self.internalMap);
 
         //graticule
@@ -126,6 +129,22 @@ function MapComponent(){
         return genericPoiGroup;
     }
 
+    self.createFeaturesLayer = function(){
+        
+        let featuresPoiGroup = new L.layerGroup();
+
+        _.forEach(data_features, function(poi) {
+                        
+            let svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svgElement.setAttribute('xmlns', "http://www.w3.org/2000/svg");
+            svgElement.setAttribute('viewBox', "0 0 " + poi.width + " " + poi.height);
+            svgElement.innerHTML = poi.source;
+            let svgElementBounds = poi.bounds;
+            L.svgOverlay(svgElement, svgElementBounds).addTo(featuresPoiGroup);
+
+        });
+        return featuresPoiGroup;
+    }
 
 }
 
