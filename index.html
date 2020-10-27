@@ -3,12 +3,48 @@
 		<title>KAI Maps</title>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="styles/bootstrap.min.css" />
+		<link rel="stylesheet" href="styles/leaflet.css" />
+		<link rel="stylesheet" href="styles/Leaflet.Coordinates-0.1.5.css" />
+		<link rel="stylesheet" href="styles/Leaflet.LinearMeasurement.css" />
+		<link rel="stylesheet" href="styles/leaflet.contextmenu.min.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		
+
+		<script src="scripts/data/genericpoi.js"></script>
+		<script src="scripts/data/features.js"></script>
+		<script src="scripts/lodash.min.js"></script>
+		<script src="scripts/jquery-3.5.1.min.js"></script>
+		<script src="scripts/bootstrap.bundle.min.js"></script>
+		<script src="scripts/leaflet.js"></script>
+		<script src="scripts/Leaflet.Coordinates-0.1.5.min.js"></script>
+		<script src="scripts/Leaflet.Graticule.js"></script>
+		<script src="scripts/Leaflet.LinearMeasurement.js"></script>
+		<script src="scripts/leaflet.contextmenu.min.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/map.js"></script>
+		<script src="scripts/crs.js"></script>
+		<script src="scripts/plotter.js"></script>
 	</head>
 	<body>
-        KAI Map Server - Click here to browse the map
+		<div id="header">
+			<div class="header-logo">
+				<img src="https://maps.kaero.space/CDN/img/KAIA_logo.png" title="KAIA Logo" />
+			</div>
+			<div class="header-kai">
+				<a href="https://kaerospace.blogspot.com/" target="_blank">
+					<img src="https://maps.kaero.space/CDN/img/KAI_Square.png" title="KAI Logo" />
+				</a>
+			</div>
+		</div>
+		<div id="mainMap"></div>
 	</body>
 	<script type="text/javascript">
-		window.location.replace("https://maps.kaero.space/site/");
+		$(document).ready(function () {
+			let application = new App();
+			application.run();
+		});
 	</script>
 	
 </html>
