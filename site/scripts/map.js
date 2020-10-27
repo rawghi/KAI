@@ -147,11 +147,11 @@ function MapComponent(){
                 iconSize: [36, 36],
                 iconAnchor: [18, 42],
                 popupAnchor: [0, -42],
-                html:'<div class="circle"><img src="https://rawghi.github.io/KAI/CDN/mapicons/' + poi.icon + '.png" /></div><div class="arrow"></div>'
+                html:'<div class="circle"><img src="https://maps.kaero.space/CDN/mapicons/' + poi.icon + '.png" /></div><div class="arrow"></div>'
               });
             
             let myIcon = L.icon({
-                iconUrl: 'https://rawghi.github.io/KAI/CDN/mapicons/' + poi.icon + '.png',
+                iconUrl: 'https://maps.kaero.space/CDN/mapicons/' + poi.icon + '.png',
                 iconSize: [24, 24],
                 iconAnchor: [12, 12],
                 popupAnchor: [0, -12]
@@ -169,7 +169,7 @@ function MapComponent(){
                         poi.description +
                     '</div>' + 
                     '<div class="popup-img">' +
-                        '<img src="https://rawghi.github.io/KAI/CDN/maplocations/' + poi.image +'" />' +
+                        '<img src="https://maps.kaero.space/CDN/maplocations/' + poi.image +'" />' +
                     '</div>' +
                 '</div>';
 

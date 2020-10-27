@@ -5,12 +5,12 @@
 /* TILE LAYER DEFINITION */
 L.TileLayer.KaiMaps = L.TileLayer.extend({
 	options: {
-		attribution: 'Powered by <a href="http://kaerospace.blogspot.com/">KAI</a> | Imagery from Kerbal Space Program via Sigma-Cartographer',
+		attribution: 'Powered by <a href="http://kaero.space/">KAI</a> | Imagery from Kerbal Space Program via Sigma-Cartographer',
 		continousWorld: false,
 		noWrap: false
 	},
 	initialize: function(options) {
-		var url = "https://rawghi.github.io/kai-mapserver/tiles/{z}/{y}/{x}.png"
+		var url = "https://tiles.kaero.space/tiles/{z}/{y}/{x}.png"
 		L.TileLayer.prototype.initialize.call(this, url, options);
 	}
 });
