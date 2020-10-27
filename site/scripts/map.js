@@ -31,7 +31,22 @@ function MapComponent(){
             maxBoundsViscosity: 0.8,
             worldCopyJump: false,
             attributionControl: true,
-            layers: [genericLayer, featuresLayer]
+            layers: [genericLayer, featuresLayer],
+            contextmenu: true,
+            contextmenuWidth: 140,
+            contextmenuItems: [{
+                text: 'Show coordinates',
+                callback: self.showCoordinates
+            }, {
+                text: 'Center map here',
+                callback: self.centerMap
+            }, '-', {
+                text: 'Zoom in',
+                callback: self.zoomIn
+            }, {
+                text: 'Zoom out',
+                callback: self.zoomOut
+            }]
         }).setView([0,0], 2);
             
         L.tileLayer.kaiMaps({body: 'kerbin', style:'sat'}).addTo(self.internalMap);
@@ -73,17 +88,54 @@ function MapComponent(){
         //scale control
         L.control.scale().addTo(self.internalMap);
 
+        //plotter
         let plotter = new Plotter({
             mapSelector: '#' + self.mapId,
             mapObj: self.internalMap
         });
         plotter.init();
-        
+
+        //resize
         self.internalMap.invalidateSize();
         self.internalMap.getSize();
         
         return self.internalMap;
     };
+
+    self.showCoordinates = function(e) {
+        alert('Latitude, Longitude: ['  + e.latlng.lat + ',' + e.latlng.lng + ']');
+    }
+    
+    self.centerMap = function (e) {
+        self.internalMap.panTo(e.latlng);
+    }
+    
+    self.zoomIn = function(e) {
+        self.internalMap.zoomIn();
+    }
+    
+    self.zoomOut = function(e) {
+        self.internalMap.zoomOut();
+    }  
+
+    self.contextMenuFunc = function(e, arg){
+        switch (arg){
+            case "SHOWCOORD":
+                alert(e.latlng);
+                break;
+            case "CENTER":
+                self.internalMap.panTo(e.latlng);
+                break;
+            case "ZOOMIN":
+                self.internalMap.zoomIn();
+                break;
+            case "ZOOMOUT":
+                self.internalMap.zoomOut();
+                break;
+            default:
+                break;
+        }
+    }
 
     self.createGenericLayer = function(){
         
