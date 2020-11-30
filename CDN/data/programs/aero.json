@@ -1,4 +1,5 @@
 {
+    "title": "Aero Program",
     "summary": "Experiments with jet technologies, conduct aerodynamic testings and develop airplanes for both the Institute (for scientific and logistics purposes) and the civilian/military market.",
     "badge": "https://1.bp.blogspot.com/-GE9SE0bHMOk/X389k1aOJFI/AAAAAAAAYXE/_LkUQq7wQmIrtX-C1Ev8CKORpTl2BlWPgCPcBGAYYCw/s0/Badge_Aero.png",
     "start_date": "Y1 D3",
@@ -26,7 +27,7 @@
         {"name": "Development of aircrafts for scientific missions", "compl": true},
         {"name": "Development of aircrafts for logistic needs", "compl": false},
         {"name": "Development of civilian oriented aircraft variants", "compl": false},
-        {"name": "TDevelopment of military oriented aircraft variants", "compl": false}
+        {"name": "Development of military oriented aircraft variants", "compl": false}
     ],
     "secondary_obj": [
         {"name": "Development of a basic jet aircraft", "compl": true}
@@ -39,6 +40,5 @@
     ],
     "outcome": "TBD",
     "images": [
-        ""
     ]
 }
