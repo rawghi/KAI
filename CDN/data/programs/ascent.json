@@ -1,0 +1,60 @@
+{
+    "title": "Ascent Program",
+    "summary": "Development of assets able to reach space and perform both atmospheric and space investigations and measurement.",
+    "badge": "https://1.bp.blogspot.com/-7cI3tJHeBzs/X389k4oXMGI/AAAAAAAAYXA/dA1A02X4OH8TisuIBdagE1z2L7ES5t10gCPcBGAYYCw/s0/Badge_Ascent.png",
+    "start_date": "Oct 13th 2020",
+    "end_date": "TBD",
+    "status": "ONGOING",
+    "status_class": "status-badge",
+    "mission_n": "TBD",
+    "description": "        <p>          The first program of the Institute, Ascent, was planned even before the very creation of the organization.        </p>        <p>          For a long time, Kerbals wondered how to find a way to reach space. Propeller planes allowed for flight, sure, but even with the recent developed           jet technologies reaching very high altitude or eventually space was impossible. <br>          Wernher Von Kerman, probably the most influential rocket theorist (and now a KAI director), demonstrated the feasibility of rocket technology           with “mini-rockets” that climbed for dozens of meters thus paving the way for starting a serious rocket development program.        </p>        <p>          While discussions in the UKN about the KAI foundation were in progress, Wehrner took the initiative and started a collaboration with Kerbodyne,           a newly created company focused on fuels research and production, to create a rocket able to climb not dozens of meters but rather hundreds if not           thousands of them, ending at some point in space. <br>          As soon as the KAI was founded, Wehrner studies and the prototype rocket, later named the SkyDart, were deemed fit to be part of the newborn Ascent Program, jump starting it.        </p>        <p>          Ascent defined objectives and goals revolve around continuing the development and the experiments of rocket technology and at the same time not only try to reach space, but           also perform atmospheric measurement and getting telemetry data to fully understand the physics behind this new science.        </p>        <p>          The program is the backbone and the foundation of all future programs and explorations.        </p>",
+    "divisions": "Space Administration - Propulsion Division - Skunkworks",
+    "kerbonauts": [
+        "None"
+    ],
+    "locations": [
+        "Kerbal Space Center"
+    ],
+    "assets": [
+        "Y-1A SkyDart (developed)",
+        "Y-1B SkyDart (developed)",
+        "Y-1L SkyDart (developed)",
+        "Y-1F SkyDart II (developed)"
+    ],
+    "primary_obj": [
+        {"name": "Reach space with an unmanned vessel", "compl": true},
+        {"name": "Put an artificial satellite on Kerbin orbit", "compl": false},
+        {"name": "Conduct atmospheric and space measurements and investigations", "compl": false},
+        {"name": "Development rockets and conduct aerodynamic tests", "compl": true},
+        {"name": "Development of a reliable launch system to deploy payloads in space", "compl": false}
+    ],
+    "secondary_obj": [
+        {"name": "Development and testing of a solid fuel propelled rocket", "compl": true},
+        {"name": "Development and testing of a liquid fuel propelled rocket", "compl": true},
+        {"name": "Evaluate reentry after atmospheric flight and space flight", "compl": true},
+        {"name": "Development and testing of a multi-stage rocket", "compl": true},
+        {"name": "Development of an artificial satellites", "compl": false},
+        {"name": "Development of a scientific module able to safely reenter after flight", "compl": false},
+        {"name": "Development of a launch system able to lift 500kg", "compl": false},
+        {"name": "Development of a launch system able to lift 1 ton", "compl": false},
+        {"name": "Conduct observation and testing of aerodynamic forces on rockets", "compl": true}
+    ],    
+    "missions": [
+        {"name": "Ascent-1", "goal": "Testing the Y-1, limited fuel", "status": "Success"},
+        {"name": "Ascent-2", "goal": "Testing the Y-1, limited fuel - Modifications to launch clamps - Extended burn at platform", "status": "Success"},
+        {"name": "Ascent-3", "goal": "Testing the Y-1 at max fuel - limited TWR", "status": "Success"},
+        {"name": "Ascent-4", "goal": "Testing the Y-1 at max fuel/max TWR", "status": "Success"},
+        {"name": "Ascent-5", "goal": "Testing the Y-1 at level flight", "status": "Success"},
+        {"name": "Ascent-6", "goal": "Testing the Y-1B parachutes", "status": "Failure"},
+        {"name": "Ascent-7", "goal": "Testing the Y-1B parachutes and identify the failure cause", "status": "Success"},
+        {"name": "Ascent-8", "goal": "Testing the Y-1B parachutes after high altitude flight", "status": "Success"},
+        {"name": "Ascent-9", "goal": "Testing the Y-1B parachutes for landing on the ground", "status": "Success"},
+        {"name": "Ascent-10", "goal": "Testing the Y-1L liquid fuel engine variant", "status": "Partial"},
+        {"name": "Ascent-11", "goal": "Testing the Y-1L liquid fuel engine variant", "status": "Partial"},
+        {"name": "Ascent-12", "goal": "Testing the Y-1F and perform low atmosphere measurements", "status": "Failure"},
+        {"name": "Ascent-13", "goal": "Testing the Y-1F and perform low atmosphere measurements", "status": "Success"}
+    ],
+    "outcome": "TBD",
+    "images": [
+    ]
+}
