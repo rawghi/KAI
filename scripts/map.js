@@ -14,10 +14,12 @@ function MapComponent(){
         
         let genericLayer = self.createGenericLayer();
         let featuresLayer = self.createFeaturesLayer();
+        let plotLayer = self.createPlotLayer();
         
         let overlayPoi = {
             "Locations": genericLayer,
-            "Geography": featuresLayer
+            "Geography": featuresLayer,
+            "Mission Plots": plotLayer
         }
 
         self.internalMap = L.map(self.mapId,{
@@ -135,6 +137,29 @@ function MapComponent(){
             default:
                 break;
         }
+    }
+
+    self.createPlotLayer = function(){
+        let genericPlotGroup = new L.layerGroup();
+
+        _.forEach(data_plot, function(plot) {
+            let polyline = L.polyline(plot.data, {color: '#fbc531'});
+
+            let MyPopupContent = 
+            '<div class="popup-container">' +
+                '<div class="popup-desc">' +
+                    plot.name +
+                '</div>' + 
+            '</div>';
+
+            polyline.bindPopup(MyPopupContent).openPopup();
+
+            polyline.addTo(genericPlotGroup);
+
+        });
+
+        return genericPlotGroup;
+
     }
 
     self.createGenericLayer = function(){
