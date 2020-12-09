@@ -49,11 +49,11 @@ const data_features = [
         "bounds": [[5.2,-76.0],[4.1,-72.3]]
     },
     {
-        "name": "Apple Bay",
-        "source": '<text opacity="0.6" stroke="#000" font-style="italic" text-anchor="start" font-family="Merriweather,Helvetica, Arial, sans-serif" font-size="24" stroke-width="0" x="-20" y="50" fill="#ffffff">Apple Bay</text>',
-        "width": 100,
-        "height": 100,
-        "bounds": [[-7.1430,-83.5845], [-8.1648,-80.9808] ]
+        "name": "Apple Gulf",
+        "source": '<text opacity="0.6" stroke="#000" font-style="italic" text-anchor="start" font-family="Merriweather,Helvetica, Arial, sans-serif" font-size="24" stroke-width="0" x="-40" y="50" fill="#ffffff">Apple Gulf</text>',
+        "width": 60,
+        "height": 60,
+        "bounds": [[-6.9360,-83.5001], [-8.1665,-80.5228] ]
     },
     {
         "name": "Mount Violet",
@@ -76,5 +76,12 @@ const data_features = [
         "height": 100,
         "bounds": [[-4.4760,-85.3341],[-5.4318,-83.0819]]
     },
+    {
+        "name": "Hook Peninsula",
+        "source": '<text style="cursor: move;" font-style="italic" text opacity="0.8" stroke="#FFF" xml:space="preserve" text-anchor="start" font-family="Merriweather,Helvetica, Arial, sans-serif" font-size="24" y="30" x="-60" stroke-width="0" fill="#FFF">Hook Peninsula</text>',
+        "width": 100,
+        "height": 100,
+        "bounds": [[-8.4428,-84.0942], [-8.9262,-82.9956] ]
+    }
 
 ]
