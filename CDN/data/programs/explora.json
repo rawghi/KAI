@@ -4,22 +4,22 @@
     "badge": "https://1.bp.blogspot.com/-HB5xkiNtNgQ/X6VZ8yW4oGI/AAAAAAAAYd4/bHY2NT7lRwYrHiuWAmKCe-J3QPWguBLawCLcBGAsYHQ/s0/Badge_Explora.png",
     "start_date": "TBD",
     "end_date": "TBD",
-    "status": "PLANNED",
-    "status_class": "status-badge-p",
+    "status": "ONGOING",
+    "status_class": "status-badge",
     "mission_n": "TBD",
     "description": "<p>The Explora Program main objective is to allow the Institute to understand the planet where we live, Kerbin.  </p><p>Thanks to the development of scientific assets and platforms (like the Aerojet scientific variant), the Institute is now able to mount up exploration missions of the region and continent where the KSC lies in. The scope of the program is also extended not only to the pure exploration but also to perform aimed measurement on both the soil and the atmosphere of Kerbin on different biomes.</p><p> Explora will also eventually include developement of specific assets and not necessarily depends solely on already built vehicles, but this is something that can be seen as an exception as the focus will still be on the operational rather than the engineering side. The Jet Laboratories, with its expertise, will take the lead of coordinating the efforts in tandem with the Science Department, which will be the final recipient of all the data gathered.</p>",
     "divisions": "Jet Laboratories",
     "kerbonauts": [
-        "TBD"
+        "Halsted Kerman"
     ],
     "locations": [
         "Kerbal Space Center"
     ],
     "assets": [
-        "None"
+        "X-1S Aerojet"
     ],
     "primary_obj": [
-        {"name": "Exploration of the Emerald Coast", "compl": false},
+        {"name": "Exploration of the Emerald Coast", "compl": true},
         {"name": "Exploration of the Sunset Range", "compl": false},
         {"name": "Exploration of the High Plains", "compl": false},
         {"name": "Exploration of the Quad Islands", "compl": false},
@@ -32,7 +32,7 @@
         {"name": "[Additional objectives will be added along the way]", "compl": false}
     ],    
     "missions": [
-
+        {"name": "Explora-1", "goal": "Exploration of the Emerald Coast", "status": "Success"}
     ],
     "outcome": "TBD",
     "images": [
