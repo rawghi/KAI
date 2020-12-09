@@ -47,6 +47,34 @@ const data_features = [
         "width": 60,
         "height": 60,
         "bounds": [[5.2,-76.0],[4.1,-72.3]]
-    }
+    },
+    {
+        "name": "Apple Bay",
+        "source": '<text opacity="0.6" stroke="#000" font-style="italic" text-anchor="start" font-family="Merriweather,Helvetica, Arial, sans-serif" font-size="24" stroke-width="0" x="-20" y="50" fill="#ffffff">Apple Bay</text>',
+        "width": 100,
+        "height": 100,
+        "bounds": [[-7.1430,-83.5845], [-8.1648,-80.9808] ]
+    },
+    {
+        "name": "Mount Violet",
+        "source": '<text style="cursor: move;" font-style="italic" text opacity="0.8" stroke="#FFF" xml:space="preserve" text-anchor="start" font-family="Merriweather,Helvetica, Arial, sans-serif" font-size="24" y="30" x="-43" stroke-width="0" fill="#FFF">Mount Violet</text>',
+        "width": 100,
+        "height": 100,
+        "bounds": [[-8.0151,-86.3954], [-8.7622,-84.9232] ]
+    },
+    {
+        "name": "Low Plains",
+        "source": '<text style="cursor: move;" font-style="italic" text opacity="0.6" stroke="#FFF" xml:space="preserve" text-anchor="start" font-family="Merriweather,Helvetica, Arial, sans-serif" font-size="24" y="30" x="-43" stroke-width="0" fill="#FFF">Low Plains</text>',
+        "width": 60,
+        "height": 60,
+        "bounds": [[-3.5679,-82.4481],[-4.6665,-79.3280]]
+    },
+    {
+        "name": "Wetlands",
+        "source": '<text style="cursor: move;" font-style="italic" text opacity="0.6" stroke="#FFF" xml:space="preserve" text-anchor="start" font-family="Merriweather,Helvetica, Arial, sans-serif" font-size="24" y="30" x="-43" stroke-width="0" fill="#FFF">Wetlands</text>',
+        "width": 100,
+        "height": 100,
+        "bounds": [[-4.4760,-85.3341],[-5.4318,-83.0819]]
+    },
 
 ]

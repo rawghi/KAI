@@ -105,7 +105,7 @@ function MapComponent(){
     };
 
     self.showCoordinates = function(e) {
-        alert('Latitude, Longitude: ['  + e.latlng.lat + ',' + e.latlng.lng + ']');
+        alert('Latitude, Longitude: ['  + parseFloat(e.latlng.lat).toFixed(4) + ',' + parseFloat(e.latlng.lng).toFixed(4) + ']');
     }
     
     self.centerMap = function (e) {
@@ -147,8 +147,11 @@ function MapComponent(){
 
             let MyPopupContent = 
             '<div class="popup-container">' +
-                '<div class="popup-desc">' +
-                    plot.name +
+                '<div class="popup-title">' +
+                    plot.name + 
+                '</div>' + 
+                '<div class="popup-desc-gen">' +
+                    plot.description +
                 '</div>' + 
             '</div>';
 

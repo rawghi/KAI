@@ -13,7 +13,7 @@ module.exports = function(grunt) {
                     ]
                 },
                 files: {
-                    'site/styles/style.css': 'site/styles/style.less'
+                    'styles/style.css': 'styles/style.less'
                 }
             }
         },
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         //},
         //watch for changes
         watch: {
-          files: ['site/**/*.less'],
+          files: ['**/*.less'],
           tasks: ['less']
         }
     });
