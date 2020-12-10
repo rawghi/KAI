@@ -9,6 +9,14 @@ function MapComponent(){
         
     };
 
+    self.getUrlParameter = function(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+
     /* MAP INIT */
     self.initMap = function(){
         
@@ -27,13 +35,12 @@ function MapComponent(){
             minZoom: 1,
             maxZoom: 6,
             zoomDelta: 1,
-            center: [0,0],
-            zoom: 2,
             maxBounds: [[-90,-190], [90,190]],
             maxBoundsViscosity: 0.8,
             worldCopyJump: false,
             attributionControl: true,
             layers: [genericLayer, featuresLayer],
+            urlView: true,
             contextmenu: true,
             contextmenuWidth: 140,
             contextmenuItems: [{
@@ -49,8 +56,13 @@ function MapComponent(){
                 text: 'Zoom out',
                 callback: self.zoomOut
             }]
-        }).setView([0,0], 2);
-            
+        });
+        
+        
+        if (!self.internalMap.options.urlView || !self.internalMap.urlView.viewLoaded()) {
+            self.internalMap.setView([0,0], 2);
+        };
+
         L.tileLayer.kaiMaps({body: 'kerbin', style:'sat'}).addTo(self.internalMap);
 
         L.control.layers(null,overlayPoi).addTo(self.internalMap);
@@ -101,6 +113,15 @@ function MapComponent(){
         self.internalMap.invalidateSize();
         self.internalMap.getSize();
         
+        self.internalMap.on('moveend', function(e){
+
+        });
+        
+        self.internalMap.on('zoomend', function(e){
+
+        });
+
+
         return self.internalMap;
     };
 
