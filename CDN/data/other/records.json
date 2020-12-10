@@ -1,0 +1,33 @@
+[
+    {
+        "record": "First rocket launched",
+        "date": "Oct 13th 2020",
+        "holder": "Y-1A SkyDart",
+        "mission": "Ascent-1"
+    },
+    {
+        "record": "First aircraft launched",
+        "date": "Oct 19th 2020",
+        "holder": "X-1 Aerojet",
+        "mission": "Aero-1"
+    },
+    {
+        "record": "First KAI pilot",
+        "date": "Oct 19th 2020",
+        "holder": "Jebediah Kerman",
+        "mission": "Aero-1"
+    },
+    {
+        "record": "First asset in space",
+        "date": "Oct 23rd 2020",
+        "holder": "Y-1A SkyDart",
+        "mission": "Ascent-4"
+    },
+    {
+        "record": "First multistage rocket",
+        "date": "Nov 30th 2020",
+        "holder": "Y-1F SkyDart II",
+        "mission": "Ascent-12"
+    }		
+		
+]
