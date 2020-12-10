@@ -1,0 +1,128 @@
+[
+    {
+        "name": "JEBEDIAH",
+        "surname": "KERMAN",
+        "id": "K-001",
+        "spec": "PILOT",
+        "gender": "M",
+        "hiring": "Oct 17th 2020",
+        "batch": "1",
+        "missions": "2",
+        "status": "ACTIVE",
+        "statusColor": "#10ac84",
+        "awards": [
+            { "name": "First Seven - Awarded for being one of the first seven kerbonauts.", "url": "https://maps.kaero.space/CDN/badges/Nation15.png"},
+            { "name": "Aero Program - Awarded for partecipating in the Aero Program.", "url": "https://maps.kaero.space/CDN/badges/Custom01.png"},
+            { "name": "Qualified Operations - Awarded for partecipating in a mission as pilot/navigator.", "url": "https://maps.kaero.space/CDN/badges/STM12.png"},
+            { "name": "Test Pilot - Awarded for piloting a prototype vessel.", "url": "https://maps.kaero.space/CDN/badges/STM01.png"},
+            { "name": "Wings - Awarded for flying an aircraft in atmosphere.", "url": "https://maps.kaero.space/CDN/badges/STM07.png"}
+        ],
+        "bio": "Jebediah Kerman started his career as a military pilot for the United Kerbal Nations Air Force (UKNAF).<br />After serving for 6 years he moved on the private sector where he worked as a test pilot for C7 Aerospace before transitioning to the KAI.<br />He owns a private company as a side business (actually managed by his brother) called Jebediah Kerman’s Junkyard and Spacecraft Parts Co., that specialize in recovering plane wrecks and recondition parts for the aerospace market."
+    },
+    {
+        "name": "VALENTINA",
+        "surname": "KERMAN",
+        "id": "K-002",
+        "spec": "PILOT",
+        "gender": "F",
+        "hiring": "Oct 17th 2020",
+        "batch": "1",
+        "missions": "1",
+        "status": "ACTIVE",
+        "statusColor": "#10ac84",
+        "awards": [
+            { "name": "First Seven - Awarded for being one of the first seven kerbonauts.", "url": "https://maps.kaero.space/CDN/badges/Nation15.png"},
+            { "name": "Aero Program - Awarded for partecipating in the Aero Program.", "url": "https://maps.kaero.space/CDN/badges/Custom01.png"},
+            { "name": "Qualified Operations - Awarded for partecipating in a mission as pilot/navigator.", "url": "https://maps.kaero.space/CDN/badges/STM12.png"},
+            { "name": "Test Pilot - Awarded for piloting a prototype vessel.", "url": "https://maps.kaero.space/CDN/badges/STM01.png"},
+            { "name": "Wings - Awarded for flying an aircraft in atmosphere.", "url": "https://maps.kaero.space/CDN/badges/STM07.png"}
+        ],
+        "bio": "Valentina Kerman is a former cargo pilot for the United Kerbdom Air Command and later applied for the kerbonaut role in the KAI.<br />She is a graduate in aeronautical engineering and during the time as a military pilot she also held lessons in aeronautics at the Kerbridge University.<br />Valentina owns a propeller plane that she use during weekend for sightseeing around the Booster Bay."
+    },
+    {
+        "name": "BOB",
+        "surname": "KERMAN",
+        "id": "K-003",
+        "spec": "SCIENTIST",
+        "gender": "M",
+        "hiring": "Oct 17th 2020",
+        "batch": "1",
+        "missions": "0",
+        "status": "ACTIVE",
+        "statusColor": "#10ac84",
+        "awards": [
+            { "name": "First Seven - Awarded for being one of the first seven kerbonauts.", "url": "https://maps.kaero.space/CDN/badges/Nation15.png"}
+        ],
+        "bio": "Bob Kerman’s background saw him working in prestigious hospitals as a surgeon, particularly at St.Kerman General Hospital, and participating in research aimed at understanding the human physiology with a multiple of private aerospace firms.<br />Bob also spent months traveling to remote Kerbin locations to assist in humanitarian missions, particularly in providing emergency surgery to natural disasters victims.<br />During his military service, he was commissioned as Medical Corps officer for the United Kates Navy."
+    },
+    {
+        "name": "BILL",
+        "surname": "KERMAN",
+        "id": "K-004",
+        "spec": "ENGINEER",
+        "gender": "M",
+        "hiring": "Oct 17th 2020",
+        "batch": "1",
+        "missions": "0",
+        "status": "ACTIVE",
+        "statusColor": "#10ac84",
+        "awards": [
+            { "name": "First Seven - Awarded for being one of the first seven kerbonauts.", "url": "https://maps.kaero.space/CDN/badges/Nation15.png"}
+        ],
+        "bio": "Bill Kerman graduated in both aeronautical and system engineering and he was a former employee of the Rockomax Conglomerate. He owns multiple patents related to aircraft engines and parachute equipment.<br />He served in the United Kates Air Force where he worked on aircraft maintenance and he also flew on K-29 bombers as engine mechanics.<br />His expertise in engineering allows him not only to fly on KAI assets but also to work on they planning and manufacturing."
+    },
+    {
+        "name": "ROSBUS",
+        "surname": "KERMAN",
+        "id": "K-005",
+        "spec": "ENGINEER",
+        "gender": "F",
+        "hiring": "Oct 17th 2020",
+        "batch": "1",
+        "missions": "0",
+        "status": "ACTIVE",
+        "statusColor": "#10ac84",
+        "awards": [
+            { "name": "First Seven - Awarded for being one of the first seven kerbonauts.", "url": "https://maps.kaero.space/CDN/badges/Nation15.png"}
+        ],
+        "bio": "Rosbus Kerman is an aeronautical engineer specialized in life support systems. She worked on the development of the Mk.I Model Spacesuit at the time she was working at Integrated Integrals (the company that co-developed the suite with the KAI).<br />An affirmed entrepreneur, she also worked as a CTO of the Rose Foundation, a charity civilian airlines company, founded by his father.<br />The call for kerbonauts by the KAI however was for Rosbus a magnet too strong to resist, hence she dropped all her responsibilities at the father's company for joining the Institute."
+    },
+    {
+        "name": "LUDRIN",
+        "surname": "KERMAN",
+        "id": "K-006",
+        "spec": "SCIENTIST",
+        "gender": "M",
+        "hiring": "Oct 17th 2020",
+        "batch": "1",
+        "missions": "0",
+        "status": "ACTIVE",
+        "statusColor": "#10ac84",
+        "awards": [
+            { "name": "First Seven - Awarded for being one of the first seven kerbonauts.", "url": "https://maps.kaero.space/CDN/badges/Nation15.png"}
+        ],
+        "bio": "Ludrin Kerman is an astrobiologist that worked for the University of Southern Kermifornia. His studies were aimed atinvestigating meteorite remains to find possible biological traces.<br />He also collaborated with many astronomical agencies and institutes for fine tuning observatories equipment.<br />Ludrin has a civilian pilot certificate and can be usually seen around driving sports cars, of which he’s an avid owner."
+    },
+    {
+        "name": "HALSTED",
+        "surname": "KERMAN",
+        "id": "K-007",
+        "spec": "PILOT",
+        "gender": "M",
+        "hiring": "Oct 17th 2020",
+        "batch": "1",
+        "missions": "2",
+        "status": "ACTIVE",
+        "statusColor": "#10ac84",
+        "awards": [
+            { "name": "First Seven - Awarded for being one of the first seven kerbonauts.", "url": "https://maps.kaero.space/CDN/badges/Nation15.png"},
+            { "name": "Aero Program - Awarded for partecipating in the Aero Program.", "url": "https://maps.kaero.space/CDN/badges/Custom01.png"},
+            { "name": "Qualified Operations - Awarded for partecipating in a mission as pilot/navigator.", "url": "https://maps.kaero.space/CDN/badges/STM12.png"},
+            { "name": "Test Pilot - Awarded for piloting a prototype vessel.", "url": "https://maps.kaero.space/CDN/badges/STM01.png"},
+            { "name": "Wings - Awarded for flying an aircraft in atmosphere.", "url": "https://maps.kaero.space/CDN/badges/STM07.png"},
+            { "name": "Explora Program - Awarded for partecipating in the Explora Program.", "url": "https://maps.kaero.space/CDN/badges/Custom02.png"}
+
+        ],
+        "bio": "Halsted Kerman is a former lieutenant of the Federal Republic of Kerman. He participated in severa combat missions during the Kerbauer Uprising against the rebel forces and was awarded with multiple service medals.<br />Halsted later was transferred to the FRK Acrobatics Team where for two years travelled the world participating in air shows.<br />Since he was hired by the KAI he moved his residence close to the KSC."
+    }
+]
