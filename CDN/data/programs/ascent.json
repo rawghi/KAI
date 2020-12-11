@@ -52,7 +52,8 @@
         {"name": "Ascent-10", "goal": "Testing the Y-1L liquid fuel engine variant", "status": "Partial"},
         {"name": "Ascent-11", "goal": "Testing the Y-1L liquid fuel engine variant", "status": "Partial"},
         {"name": "Ascent-12", "goal": "Testing the Y-1F and perform low atmosphere measurements", "status": "Failure"},
-        {"name": "Ascent-13", "goal": "Testing the Y-1F and perform low atmosphere measurements", "status": "Success"}
+        {"name": "Ascent-13", "goal": "Testing the Y-1F and perform low atmosphere measurements", "status": "Success"},
+        {"name": "Ascent-14", "goal": "High atmosphere measurements with TEABAG probe", "status": "Success"}
     ],
     "outcome": "TBD",
     "images": [
