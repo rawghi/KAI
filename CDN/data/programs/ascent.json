@@ -24,7 +24,7 @@
     "primary_obj": [
         {"name": "Reach space with an unmanned vessel", "compl": true},
         {"name": "Put an artificial satellite on Kerbin orbit", "compl": false},
-        {"name": "Conduct atmospheric and space measurements and investigations", "compl": false},
+        {"name": "Conduct atmospheric and space measurements and investigations", "compl": true},
         {"name": "Development rockets and conduct aerodynamic tests", "compl": true},
         {"name": "Development of a reliable launch system to deploy payloads in space", "compl": false}
     ],
@@ -34,7 +34,7 @@
         {"name": "Evaluate reentry after atmospheric flight and space flight", "compl": true},
         {"name": "Development and testing of a multi-stage rocket", "compl": true},
         {"name": "Development of an artificial satellites", "compl": false},
-        {"name": "Development of a scientific module able to safely reenter after flight", "compl": false},
+        {"name": "Development of a scientific module able to safely reenter after flight", "compl": true},
         {"name": "Development of a launch system able to lift 500kg", "compl": false},
         {"name": "Development of a launch system able to lift 1 ton", "compl": false},
         {"name": "Conduct observation and testing of aerodynamic forces on rockets", "compl": true}
