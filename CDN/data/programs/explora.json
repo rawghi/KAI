@@ -32,7 +32,8 @@
         {"name": "[Additional objectives will be added along the way]", "compl": false}
     ],    
     "missions": [
-        {"name": "Explora-1", "goal": "Exploration of the Emerald Coast", "status": "Success"}
+        {"name": "Explora-1", "goal": "Exploration of the Emerald Coast", "status": "Success"},
+        {"name": "Explora-2", "goal": "Exploration of the Sunset Range", "status": "Success"}
     ],
     "outcome": "TBD",
     "images": [

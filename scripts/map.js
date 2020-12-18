@@ -164,7 +164,7 @@ function MapComponent(){
         let genericPlotGroup = new L.layerGroup();
 
         _.forEach(data_plot, function(plot) {
-            let polyline = L.polyline(plot.data, {color: '#fbc531'});
+            let polyline = L.polyline(plot.data, {color: plot.color});
 
             let MyPopupContent = 
             '<div class="popup-container">' +

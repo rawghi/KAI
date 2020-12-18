@@ -29,7 +29,7 @@
         "gender": "F",
         "hiring": "Oct 17th 2020",
         "batch": "1",
-        "missions": "1",
+        "missions": "2",
         "status": "ACTIVE",
         "statusColor": "#10ac84",
         "awards": [
@@ -37,7 +37,8 @@
             { "name": "Aero Program - Awarded for partecipating in the Aero Program.", "url": "https://maps.kaero.space/CDN/badges/Custom01.png"},
             { "name": "Qualified Operations - Awarded for partecipating in a mission as pilot/navigator.", "url": "https://maps.kaero.space/CDN/badges/STM12.png"},
             { "name": "Test Pilot - Awarded for piloting a prototype vessel.", "url": "https://maps.kaero.space/CDN/badges/STM01.png"},
-            { "name": "Wings - Awarded for flying an aircraft in atmosphere.", "url": "https://maps.kaero.space/CDN/badges/STM07.png"}
+            { "name": "Wings - Awarded for flying an aircraft in atmosphere.", "url": "https://maps.kaero.space/CDN/badges/STM07.png"},
+            { "name": "Explora Program - Awarded for partecipating in the Explora Program.", "url": "https://maps.kaero.space/CDN/badges/Custom02.png"}
         ],
         "bio": "Valentina Kerman is a former cargo pilot for the United Kerbdom Air Command and later applied for the kerbonaut role in the KAI.<br />She is a graduate in aeronautical engineering and during the time as a military pilot she also held lessons in aeronautics at the Kerbridge University.<br />Valentina owns a propeller plane that she use during weekend for sightseeing around the Booster Bay."
     },
