@@ -19,14 +19,15 @@
     ],
     "assets": [
         "X-1 Aerojet (developed)",
-        "X-1S Aerojet (developed)"
+        "X-1S Aerojet (developed)",
+        "C-1 Cityjet"
     ],
     "primary_obj": [
         {"name": "Test jet engine technology", "compl": true},
         {"name": "Conduct aerodynamic testings on different aircraft/wings shapes/sizes", "compl": false},
         {"name": "Development of aircrafts for scientific missions", "compl": true},
         {"name": "Development of aircrafts for logistic needs", "compl": false},
-        {"name": "Development of civilian oriented aircraft variants", "compl": false},
+        {"name": "Development of civilian oriented aircraft variants", "compl": true},
         {"name": "Development of military oriented aircraft variants", "compl": false}
     ],
     "secondary_obj": [
@@ -36,7 +37,8 @@
         {"name": "Aero-1", "goal": "Testing the X-1 flight capabilities", "status": "Success"},
         {"name": "Aero-2", "goal": "Testing the X-1 max speed ASL", "status": "Success"},
         {"name": "Aero-3", "goal": "Qualification of the Y-1S", "status": "Success"},
-        {"name": "Aero-4", "goal": "Testing the kOS powered telemetry module on the Y-1S", "status": "Success"}
+        {"name": "Aero-4", "goal": "Testing the kOS powered telemetry module on the Y-1S", "status": "Success"},
+        {"name": "Aero-5", "goal": "Qualification of the C-1 Cityjet", "status": "Success"}
     ],
     "outcome": "TBD",
     "images": [
