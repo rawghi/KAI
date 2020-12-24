@@ -20,7 +20,7 @@
     "assets": [
         "X-1 Aerojet (developed)",
         "X-1S Aerojet (developed)",
-        "C-1 Cityjet"
+        "C-1 Cityjet (developed)"
     ],
     "primary_obj": [
         {"name": "Test jet engine technology", "compl": true},
