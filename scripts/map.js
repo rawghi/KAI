@@ -237,9 +237,28 @@ function MapComponent(){
         _.forEach(data_features, function(poi) {
                         
             let svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-            svgElement.setAttribute('xmlns', "http://www.w3.org/2000/svg");
-            svgElement.setAttribute('viewBox', "0 0 " + poi.width + " " + poi.height);
-            svgElement.innerHTML = poi.source;
+            svgElement.setAttribute('viewBox', "0 0 100 100");
+            svgElement.setAttribute('overflow', "visible");
+            svgElement.setAttribute('height', '100%');
+            svgElement.setAttribute('width', '100%');
+            let rotation = 0;
+            if(poi.rotation){
+                rotation = poi.rotation
+            }
+            let x = "-50%";
+            if(poi.x_override){
+                x = poi.x_override;
+            }
+            let y = "50%";
+            if(poi.y_override){
+                y = poi.y_override;
+            }
+            let style = "";
+            if(poi.style_override){
+                style = poi.style_override;
+            }
+            svgElement.innerHTML = 
+                '<text class="feature-' + poi.type + '" x="'+ x +'" y="'+ y +'" transform="rotate(' + rotation + ')" style="' + style + '">' + poi.name + '</text>';
             let svgElementBounds = poi.bounds;
             L.svgOverlay(svgElement, svgElementBounds).addTo(featuresPoiGroup);
 
